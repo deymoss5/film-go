@@ -1,12 +1,14 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+import { createRoot } from 'react-dom/client'
 import './index.css' // Подключение стилей
 import App from './App' // Подключение главного компонента
 
 // Рендерим корневой компонент <App /> в div#root
-ReactDOM.render(
+
+const container = document.getElementById('root')
+const root = createRoot(container) // createRoot(container!) if you use TypeScript
+root.render(
     <React.StrictMode>
         <App />
-    </React.StrictMode>,
-    document.getElementById('root')
+    </React.StrictMode>
 )

@@ -74,3 +74,39 @@
 .movie-card button:hover {
     background-color: #218838;
 }
+
+/* Стили для избранного */
+.favorites-list {
+    margin-top: 30px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.favorite-movie {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.favorite-movie h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.favorite-movie button {
+    padding: 5px 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.favorite-movie button:hover {
+    background-color: #c82333;
+}
